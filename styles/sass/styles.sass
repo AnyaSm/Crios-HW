@@ -1,0 +1,429 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700)
+@import compass
+@import variables
+@import compass/css3
+@import compass/layout
+@import compass/typography
+@import compass/utilities
+
+/*-----------RESET STYLES-------------*/
+*
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+a,p
+  text-decoration: none
+
+a, button, i, input
+  -webkit-transition: 0.2s ease-out
+  -moz-transition: 0.2s ease-out
+  -o-transition: 0.2s ease-out
+  transition: 0.2s ease-out
+
+ul
+  list-style: none
+
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea
+  padding: 0
+  margin: 0
+  line-height: 1em
+/*--------END RESET STYLES------------*/
+
+/*---------RESET BOOTSTRAP STYLES-----*/
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand
+  margin: 0
+/*-----END RESET BOOTSTRAP STYLES-----*/
+
+/*------------WELCOME STYLES----------*/
+.welcome
+  overflow: hidden
+  margin-bottom: -350px
+  .jumbotron
+    margin-top: 300px
+    padding: 0
+    background: transparent
+    h2
+      margin-bottom: 25px
+      font: 400 48px 'Montserrat', sans-serif
+      text-align: center
+      color: $black-color
+    p
+      margin-bottom: 80px
+      font: 400 18px 'Montserrat', sans-serif
+      color: $grey-color
+    .button
+      text-align: center
+      .btn-lg
+        padding: 10px 30px
+        font: 700 14px 'Montserrat', sans-serif
+        text-transform: uppercase
+        color: $main-color
+        box-shadow: 0 0 23px 0px $light-grey
+        background: transparent
+        border-color: transparent
+        border-radius: 50px
+  .welcome-img
+    img
+      position: relative
+      top: -170px
+      z-index: -1
+
+/*------------HEADER STYLES-----------*/
+.header
+  justify-content: space-between
+  .navbar-header
+    padding-top: 30px
+    .navbar-toggle
+      display: block
+      margin: 0
+      padding: 12px 9px
+      border-radius: 30px
+      box-shadow: 0 0 23px 0px $light-grey
+      .icon-bar
+        background: $black-color
+  .navbar-brand
+    padding-top: 0
+    img
+      width: 100%
+      height: auto
+  .search
+    padding-top: 30px
+    img
+      padding: 11px
+      border-radius: 30px
+      box-shadow: 0 0 23px 0px $light-grey
+
+/*---------END HEADER STYLES----------*/
+/*---------END WELCOME STYLES---------*/
+
+/*---------PAGE-HEADER STYLES---------*/
+.page-header
+  margin-bottom: 0
+  padding-bottom: 90px
+  border-bottom: none
+  p
+    margin-bottom: 10px
+    font: 400 18px 'Montserrat', sans-serif
+    color: $grey-color
+  h2
+    font: 400 48px 'Montserrat', sans-serif
+    color: $black-color
+/*------END PAGE-HEADER STYLES--------*/
+
+/*------------OFFER STYLES------------*/
+.offer
+  padding-bottom: 100px
+  text-align: center
+  .offer-list
+    margin-bottom: 80px
+    h3
+      position: relative
+      margin-bottom: 20px
+      padding-top: 70px
+      font: 400 18px 'Montserrat', sans-serif
+      color: $black-color
+    .church
+      &::before
+        content: ''
+        position: absolute
+        width: 50px
+        height: 47px
+        top: 0
+        right: 50%
+        margin-right: -25px
+        background: url("../../images/church-icon.png") no-repeat
+    .snow
+      &::before
+        content: ''
+        position: absolute
+        width: 48px
+        height: 48px
+        top: 0
+        right: 50%
+        margin-right: -24px
+        background: url("../../images/snow-icon.png") no-repeat
+    .ball
+      &::before
+        content: ''
+        position: absolute
+        width: 52px
+        height: 46px
+        top: 0
+        right: 50%
+        margin-right: -26px
+        background: url("../../images/ball-icon.png") no-repeat
+    .bell
+      &::before
+        content: ''
+        position: absolute
+        width: 45px
+        height: 47px
+        top: 0
+        right: 50%
+        margin-right: -22px
+        background: url("../../images/bell-icon.png") no-repeat
+    p
+      font-family: 'Montserrat', sans-serif
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+      color: $grey-color
+  .button
+    .btn-lg
+      padding: 10px 30px
+      margin-top: 80px
+      font: 700 14px 'Montserrat', sans-serif
+      text-transform: uppercase
+      color: $main-color
+      box-shadow: 0 0 23px 0px $light-grey
+      background: transparent
+      border-color: transparent
+      border-radius: 50px
+/*----------END OFFER STYLES----------*/
+
+/*------------ABOUT STYLES------------*/
+.about
+  background: $about-bg
+  .container-fluid
+    margin: 0
+    padding: 0
+
+.about-list
+  li
+    padding: 0
+    .img-wrap
+      padding: 0
+    .description
+      display: flex
+      flex-direction: column
+      margin: auto
+      max-width: 505px
+      justify-content: flex-start
+      h2
+        margin-bottom: 30px
+        font: 400 48px 'Montserrat', sans-serif
+        color: $black-color
+      p
+        opacity: 0.35
+        font-family: 'Montserrat', sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        color: $grey-color
+/*---------END ABOUT STYLES-----------*/
+
+/*-----------EXAMPLE STYLES-----------*/
+.example
+  position: relative
+  padding: 150px 0
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    left: -200px
+    top: 0
+    width: 674px
+    height: 674px
+    background: url("../../images/snowflake.png") no-repeat
+  &::after
+    content: ''
+    position: absolute
+    right: -160px
+    bottom: 0
+    width: 672px
+    height: 788px
+    background: url("../../images/snowflake-bg.png") no-repeat
+    z-index: -1
+
+.example-list
+  .explanation
+    display: flex
+    flex-direction: column
+    margin: auto
+    max-width: 500px
+    justify-content: flex-start
+    h2
+      margin-bottom: 30px
+      font: 400 48px 'Montserrat', sans-serif
+      color: $main-color
+    p
+      opacity: 0.35
+      font-family: 'Montserrat', sans-serif
+      font-size: 15px
+      font-weight: 400
+      line-height: 30px
+      color: $grey-color
+
+/*--------END EXAMPLE STYLES----------*/
+
+/*-----------REVIEWS STYLES-----------*/
+.reviews
+  background: $about-bg url("../../images/snowflake-men.png") 0 50% no-repeat
+  .img-wrap
+    img
+      display: inline-block
+  .comment
+    display: flex
+    flex-direction: column
+    margin: auto
+    max-width: 505px
+    justify-content: flex-start
+    h2
+      margin-bottom: 30px
+      font: 400 43px 'Montserrat', sans-serif
+      color: $pink-color
+    p
+      margin-bottom: 35px
+      opacity: 0.35
+      font-family: 'Montserrat', sans-serif
+      font-size: 15px
+      font-weight: 400
+      line-height: 30px
+      color: $grey-color
+    .info
+      margin-bottom: 0
+    span
+      font: 400 15px 'Montserrat', sans-serif
+      color: $black-color
+/*--------END REVIEWS STYLES----------*/
+
+/*---------CONTACT-US STYLES----------*/
+.contact-us
+  padding-top: 70px
+  text-align: center
+  .button
+    .btn-lg
+      padding: 10px 30px
+      font: 700 14px 'Montserrat', sans-serif
+      text-transform: uppercase
+      color: $main-color
+      box-shadow: 0 0 23px 0px $light-grey
+      background: transparent
+      border-color: transparent
+      border-radius: 50px
+/*------END CONTACT-US STYLES----------*/
+
+/*------------MODAL STYLES-------------*/
+
+.media-list
+  margin-top: 50px
+  padding-bottom: 50px
+  li
+    position: relative
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+    a
+      width: 55px
+      height: 55px
+      border-radius: 50%
+      background: $light-grey
+
+.media-list
+  .facebook
+    a
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        margin-top: -15px
+        left: 50%
+        margin-left: -7px
+        width: 14px
+        height: 30px
+        background: url("../../images/facebook-icon.png") no-repeat
+      &:hover
+        background: $social-fasebook
+  .twitter
+    a
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        margin-top: -12px
+        left: 50%
+        margin-left: -15px
+        width: 31px
+        height: 24px
+        background: url("../../images/twitter-icon.png") no-repeat
+      &:hover
+        background: $social-twitter
+  .social
+    a
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        margin-top: -13px
+        left: 50%
+        margin-left: -13px
+        width: 26px
+        height: 26px
+        background: url("../../images/social-icon.png") no-repeat
+      &:hover
+        background: $social-bg
+  .be
+    a
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        margin-top: -11px
+        left: 50%
+        margin-left: -15px
+        width: 30px
+        height: 21px
+        background: url("../../images/be-icon.png") no-repeat
+      &:hover
+        background: $social-be
+
+.fade
+  opacity: 1
+  .modal-dialog
+    width: 1170px
+    margin: 90px auto
+    .modal-body
+      .nav-list
+        position: relative
+        li
+          margin-bottom: 50px
+          a
+            font: 300 50px 'Lato', sans-serif
+            text-decoration: none
+            color: $light-grey
+            &:hover
+              color: $main-color
+        &::before
+          content: ''
+          position: absolute
+          bottom: 0
+          right: 50%
+          margin-right: -160px
+          width: 330px
+          height: 2px
+          background: $light-grey
+    .modal-header
+      border: none
+      .close
+        padding-right: 15px
+        font-size: 40px
+        font-weight: 100
+        outline: none
+    .modal-footer
+      border-top: none
+/*---------END MODAL STYLES-----------*/
+
+
+
+
+
+
+
+
+
+@import media1200
+@import media992
+@import media768
+@import media320

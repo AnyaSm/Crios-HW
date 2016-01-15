@@ -1,0 +1,157 @@
+doctype html
+html lang="en"
+head
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    title Crios
+    link href="styles/css/hover.css" rel="stylesheet" /
+    link href="styles/css/bootstrap.min.css" rel="stylesheet" /
+    link href="styles/css/flexboxgrid.min.css" rel="stylesheet" /
+    link href="styles/css/styles.css" rel="stylesheet" /
+    /! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    /! WARNING: Respond.js doesn't work if you view the page via file://
+    /![if lt IE 9]
+    script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"
+    script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
+
+body
+    section.welcome
+      .container
+        header.header.row
+          .navbar-header.row.col-xs-1.start-xs
+            .bs-example.bs-example-padded-bottom
+              button.navbar-toggle aria-controls="navbar" aria-expanded="false" data-target="#myModal" data-toggle="modal" type="button"
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+          h1.col-xs-10.row.center-xs
+            a.navbar-brand href="#"
+              img alt="logo" src="images/logo.png" /
+          .search.col-xs-1.row.end-xs
+            a href="#"
+              img alt="search" src="images/search-icon.png" /
+        .jumbotron
+          h2 Simple PSD template with cool stuff
+          p.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          .button
+            a.btn.btn-primary.btn-lg.hvr-float-shadow href="#" role="button"  Explore template
+      .welcome-img
+        img.img-responsive alt="welcome-bg" src="images/welcome-bg.png" /
+
+    section.offer
+      .container
+        .page-header
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          h2 Lorem ipsum dolor sit amet
+        ul.offer-list
+          li.col-md-3.col-sm-6.col-xs-12
+            h3.church Lorem ipsum dolor sit amet
+            p Suspendisse vel leo efficitur,venenatis est ut, tincidunt nibh.
+          li.col-md-3.col-sm-6.col-xs-12
+            h3.snow Lorem ipsum dolor sit amet
+            p Suspendisse vel leo efficitur,venenatis est ut, tincidunt nibh.
+          li.col-md-3.col-sm-6.col-xs-12
+            h3.ball Lorem ipsum dolor sit amet
+            p Suspendisse vel leo efficitur,venenatis est ut, tincidunt nibh.
+          li.col-md-3.col-sm-6.col-xs-12
+            h3.bell Lorem ipsum dolor sit amet
+            p Suspendisse vel leo efficitur,venenatis est ut, tincidunt nibh.
+        .button
+          a.btn.btn-primary.btn-lg.hvr-float-shadow href="#" role="button" Check our offer
+
+    section.about
+      .container-fluid
+        ul.about-list
+          li.row.col-xs-12
+            .img-wrap.col-sm-6.col-xs-12.start-sm
+              img.img-responsive alt="wood" src="images/wood-photo.png" /
+            .description.col-sm-6.col-xs-12.start-sm.center-xs
+              h2 Lorem ipsum dolor
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut,
+                tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+          li.row.col-xs-12
+            .img-wrap.col-sm-6.col-xs-12.start-sm
+              img.img-responsive alt="sawmill" src="images/sawmill-photo.png" /
+            .description.col-sm-6.col-xs-12.first-sm.start-sm.center-xs
+              h2 Lorem ipsum dolor
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut,
+                tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+
+    section.example
+      .container
+        ul.example-list
+          li.row.col-xs-12
+            .img-wrap.col-sm-6.col-xs-12.center-xs.start-sm
+              img.img-responsive alt="example" src="images/ex-screen.png" /
+            .explanation.col-sm-6.col-xs-12.start-sm.center-xs
+              h2 Lorem ipsum dolor
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est
+                ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+          li.row.col-xs-12
+            .img-wrap.col-sm-6.col-xs-12.center-xs.start-sm
+              img.img-responsive alt="example" src="images/screen-ex.png" /
+            .explanation.col-sm-6.col-xs-12.first-sm.start-sm.center-xs
+              h2 Lorem ipsum dolor
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est
+                ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+
+    section.reviews
+      .container
+        .row.col-xs-12
+          .img-wrap.col-sm-6.col-xs-12.center-xs
+            img.img-responsive alt="men" src="images/men-img.png" /
+          .comment.col-sm-6.col-xs-12.start-sm.center-xs
+            h2 Template is awesome
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut,
+              tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+            span John Doe
+            p.info CEO at Crios.com
+
+    section.contact-us
+      .container
+        .page-header
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          h2 Lorem ipsum dolor sit amet
+        .button
+          a.btn.btn-primary.btn-lg.hvr-float-shadow href="#" role="button" Symu.co/freebies
+      .contact-img
+        img.img-responsive alt="contact-bg" src="images/contact-us-bg.png" /
+
+    /! Modal
+    #myModal.modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+      .modal-dialog role="document"
+        .modal-content
+          .modal-header
+            button.close aria-label="Close" data-dismiss="modal" type="button"
+              span aria-hidden="true" &times;
+          .modal-body
+            ul.nav-list.col-xs-12.center-xs
+              li
+                a href="#" About Us
+              li
+                a href="#" Our Services
+              li
+                a href="#" Our Works
+              li
+                a href="#" Our Contact
+          .modal-footer
+            ul.media-list.col-xs-12.row.center-xs
+              li.facebook
+                a.hvr-grow href="#"
+              li.twitter
+                a.hvr-grow href="#"
+              li.social
+                a.hvr-grow href="#"
+              li.be
+                a.hvr-grow href="#"
+
+/! jQuery (necessary for Bootstrap's JavaScript plugins)
+script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+/! Include all compiled plugins (below), or include individual files as needed
+script src="styles/js/bootstrap.min.js"
+script src="styles/js/main.js"
+
+
+
