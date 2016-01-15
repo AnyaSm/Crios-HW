@@ -1,4 +1,4 @@
-# Horkos-HW
+# Crios-HW
 
 ## Build & Run
 * for haml
@@ -13,5 +13,5 @@
 * compass
 
 ### Compass
-```cd styles```
-```compass compile```
+* ```cd styles```
+* ```compass compile```
